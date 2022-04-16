@@ -1,0 +1,19 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: mall-product-brand
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/mall
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true    #驼峰字段映射
+  mapper-locations: classpath:mapper/*.xml
+pagehelper:
+  auto-dialect: true
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countsql
