@@ -1,0 +1,12 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: eureka-server-7000
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://loalhost:7000/eureka/
+  instance:
+    prefer-ip-address: true

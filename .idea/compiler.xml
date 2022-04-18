@@ -7,8 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Eureka-Server" />
         <module name="CommonApi" />
         <module name="mall-product" />
+        <module name="Upload-Server" />
       </profile>
     </annotationProcessing>
   </component>
