@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface ProductBrandService {
     List<ProductBrand> allProductBrands();
+    int addProductBrands(ProductBrand productBrand);
 }

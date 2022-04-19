@@ -19,4 +19,10 @@ public class ProductBrandServiceImpl implements ProductBrandService {
         return brandMapper.getAllBrand();
     }
 
+    @Override
+    public int addProductBrands(ProductBrand productBrand) {
+        int i = brandMapper.addBrand(productBrand);
+        return i;
+    }
+
 }

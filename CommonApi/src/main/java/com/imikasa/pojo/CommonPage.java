@@ -16,6 +16,7 @@ public class CommonPage<T> {
     private Boolean isFirstPage;//是否是首页
     private Boolean isLastPage; //是否是最后一页
     private int[] navigatepageNums;//页码
+    private List<T> list;
 
     public static <T>CommonPage<T> restPage(List<T> list){
         CommonPage<T> commonPage = new CommonPage<T>();
@@ -29,6 +30,7 @@ public class CommonPage<T> {
         commonPage.setIsFirstPage(pageInfo.isIsFirstPage());
         commonPage.setIsLastPage(pageInfo.isIsLastPage());
         commonPage.setNavigatepageNums(pageInfo.getNavigatepageNums());
+        commonPage.setList(pageInfo.getList());
         return commonPage;
     }
 

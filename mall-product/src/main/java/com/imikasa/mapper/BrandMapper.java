@@ -9,5 +9,6 @@ import java.util.List;
 public interface BrandMapper {
 
     List<ProductBrand> getAllBrand();
+    int addBrand(ProductBrand brand);
 
 }

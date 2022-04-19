@@ -35,7 +35,7 @@ public class TestController {
     public CommonResult<List<ProductBrand>> allPage(@RequestParam(defaultValue = "1") int pageNo, @RequestParam(defaultValue = "10") int pageSize){
         PageHelper.startPage(pageNo,pageSize);
         List<ProductBrand> allPage = productBrandService.allProductBrands();
-        CommonResult<List<ProductBrand>> result = new CommonResult(200,"操作成功",allPage,CommonPage.restPage(allPage));
+        CommonResult<List<ProductBrand>> result = new CommonResult(200,"操作成功",CommonPage.restPage(allPage));
         return result;
     }
 

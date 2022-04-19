@@ -8,4 +8,8 @@
         select * from pms_brand
     </select>
 
+    <insert id="addBrand" parameterType="com.imikasa.beans.ProductBrand">
+        insert into pms_brand (name,first_letter,sort,factory_status,show_status,logo,big_pic,brand_story) values (#{name},#{firstLetter},#{sort},#{factoryStatus},#{showStatus},#{logo},#{bigPic},#{brandStory})
+    </insert>
+
 </mapper>
